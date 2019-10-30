@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class='mb-event' data-server-country='US' lang='en'>
+<head>
+<meta content='text/html;charset=utf-8' http-equiv='Content-Type'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"87e900fa1e","applicationID":"30144493","transactionName":"c1cPRhZWXF5SSxgSX1FKCFwDFlFCRw==","queueTime":0,"applicationTime":15,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta content='width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover' name='viewport'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='yes' name='mobile-web-app-capable'>
+<meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+<meta content='webkit' name='renderer'>
+<meta content='#F55D54' name='theme-color'>
+<title>
+SPA js max
+</title>
+<link href='images/icon_android.png' rel='icon' sizes='192x192'>
+<link href='images/icon_retina.png' rel='apple-touch-icon' sizes='120x120'>
+<link href='images/icon_retina3x.png' rel='apple-touch-icon' sizes='180x180'>
+<link href='images/icon_ipad.png' rel='apple-touch-icon' sizes='144x144'>
+<link href='images/icon_ipad.png' rel='apple-touch-icon' sizes='152x152'>
+<link href='images/splashes/retina.png' media='(device-width: 320px) and (device-height: 568px)' rel='apple-touch-startup-image'>
+<link href='images/splashes/iphone6_portrait_retina.png' media='(device-width: 375px) and (device-height: 667px)' rel='apple-touch-startup-image'>
+<link href='images/splashes/iphone6plus_portrait_retina.png' media='(device-width: 414px) and (device-height: 736px)' rel='apple-touch-startup-image'>
+<link href='images/splashes/iphonex_portrait_retina.png' media='(device-width: 375px) and (device-height: 812px)' rel='apple-touch-startup-image'>
+<link href='images/splashes/ipad_portrait_retina.png' media='(device-width: 768px) and (device-height: 1024px)  and (orientation:portrait)' rel='apple-touch-startup-image'>
+<link href='images/splashes/ipad_landscape_retina.png' media='(device-width: 768px) and (device-height: 1024px)  and (orientation:landscape)' rel='apple-touch-startup-image'>
+<style>
+  html, body {
+    font-family: -apple-system, "SF UI Text", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Zen Hei", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    overflow: hidden;
+    height: 100%; }
+  
+  body {
+    background: whitesmoke;
+    color: #525e71; }
+    body.mobile {
+      height: 100vh;
+      background-color: white; }
+  
+  #download, #header {
+    display: none; }
+  
+  #notification {
+    position: fixed;
+    top: -70px;
+    left: 0; }
+  
+  .notice {
+    padding: 10px;
+    font-size: 14px; }
+    .notice p {
+      margin-bottom: 10px; }
+  
+  .spinner {
+    width: 30px;
+    height: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(51, 54, 58, 0.6) transparent;
+    border-radius: 100%;
+    transform-origin: 50% 50% 0px;
+    -webkit-animation: mb-spin 0.8s infinite linear;
+    animation: mb-spin 0.8s infinite linear;
+    display: inline-block; }
+  
+  @-webkit-keyframes mb-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+  
+    100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg); } }
+  
+  @keyframes mb-spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+  
+    100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg); } }
+  
+  #safemode, #logo, #device {
+    display: none; }
+  
+  #font-preload {
+    position: absolute;
+    top: -65535px;
+    left: -65535px;
+    font-size: 12px;
+    pointer-events: none; }
+    #font-preload .aw {
+      position: absolute;
+      width: auto;
+      white-space: nowrap; }
+    #font-preload .ah {
+      position: absolute;
+      height: auto;
+      word-break: break-word;
+      word-wrap: break-word; }
+      #font-preload .ah p {
+        margin-bottom: 5px;
+        white-space: pre-wrap; }
+        #font-preload .ah p:last-child {
+          margin-bottom: 0px; }
+  
+  #loading {
+    width: 86px;
+    height: 86px;
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -43px;
+    text-align: center;
+    font-size: 12px; }
+    #loading .logo, #loading .indicator {
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 86px;
+      height: 86px;
+      overflow: hidden;
+      background: url("images/logo-lg.svg");
+      background-size: 86px 86px; }
+    #loading .logo {
+      opacity: 0.3; }
+    #loading .indicator {
+      opacity: 1;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      height: 0%; }
+    #loading span {
+      position: absolute;
+      width: 300px;
+      left: 50%;
+      top: 110px;
+      margin-left: -150px;
+      font-size: 14px;
+      line-height: 28px;
+      color: #f77d77; }
+</style>
+<style>
+  ::-webkit-scrollbar-track {
+    background-color: transparent; }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px; }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #dedee4;
+    border-radius: 4px; }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: transparent; }
+</style>
+
+<style>
+  #splash {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f0f0f2; }
+    #splash.is-landscape img {
+      top: 50%;
+      left: 50%;
+      width: 100vh;
+      height: 100vw;
+      transform: translate(-50%, -50%) rotate(-90deg); }
+    #splash img {
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    #splash .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -15px;
+      margin-left: -15px; }
+</style>
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ez7C+8dipiqSDoExF820EBM21t09XMklw41KyzkTgw3rgeuzIg59W/PY9PCG+5UGsx1AW2JX5Xtt/KNAnNXPOg==" />
+</head>
+<body>
+<div id='font-preload'>
+<span class='dora'>check</span>
+<span class='md'>check</span>
+<span class='mb icon-save'></span>
+<span class='fa fa-user'></span>
+<div class='aw'></div>
+<div class='ah'></div>
+</div>
+<div id='loading'>
+<div class='logo'></div>
+<div class='indicator'></div>
+<span>
+loading SPA js max...
+</span>
+</div>
+<div data-user='null' id='workspace'></div>
+<div class='safe-mask' id='safemode'>
+<div class='indicator restore'>
+<div class='spinner'></div>
+<div class='text'>
+This may take several minutes. How about a cup of tea…
+<span class='progress'>0%</span>
+</div>
+</div>
+</div>
+
+
+<link rel="stylesheet" media="screen" href="webpack/font-icons-19a7d6412f1307b59ad8bb61ad16cd9b.css" />
+<link href='css/roboto.css' media='screen' rel='stylesheet'>
+
+<link rel="stylesheet" media="screen" href="assets/sharing-3386a1b30f66ea130693cf7fcd13158d.css" />
+<link rel="stylesheet" media="screen" href="webpack/lib-preview-e6ecf0072c7b40550ac9c44aaa27bebf.css" />
+<link rel="stylesheet" media="screen" href="webpack/preview-f8d58e39f5dda2de2f840f0360de502f.css" />
+<script>
+  var RELEASE_HASH = '98684264bc0782839cec05c48be74daa3615b586'
+  var MBServer = 'mockingbot.com'
+  document.getElementsByClassName('indicator')[0].style.height = '30%'
+</script>
+<script src="webpack/webpack-runtime-4eb192057ac22e2b1842.js"></script>
+<script src="webpack/i18n-en-e5eea437b9fbfc6d13f0.js"></script>
+<script src="webpack/vendor-2588ea0482b68081c7e8.js"></script>
+<script src="assets/sharing-773ce462bf2b0ef0e12786458ebe50f1.js"></script>
+<script src="webpack/lib-preview-d44d4e459479198ccec3.js"></script>
+<script src="webpack/preview-ef1ae5953fbf95bc8b3f.js"></script>
+<script>
+  $(function () {
+    if (MB.isMobile()) {
+      $('body').addClass('mobile')
+      MB.ga('send', 'event', 'goal', '在移动端打开了应用')
+    }
+  
+    MB.isInApp = false
+  
+    MB.load({
+      token: '436d4bed148d1630c407ea651a5477704d1e36c3',
+      encryptedPassword: '',
+      isPasswordRequired: false,
+      installerProject: {"name":"SPA js max","accessToken":"436d4bed148d1630c407ea651a5477704d1e36c3","iconUrl":"images/icon_retina3x.png","userPlan":"pro","updatedAt":"2018-04-05T14:47:49-04:00","exportable":true,"passwordRequired":false,"password":null,"ios_client_url":"https://itunes.apple.com/cn/app/mockingbot/id1050565468?ls=1\u0026mt=8","android_client_url":"http://a.app.qq.com/o/simple.jsp?pkgname=com.mockingbot"}
+    })
+  })
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-29613374-1', 'auto');
+  ga('set', 'userId', '');
+  ga('require', 'ec');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+<script src="data/project.json"></script>
+<script src="data/artboards.json"></script>
